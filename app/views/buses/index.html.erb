@@ -1,0 +1,8 @@
+<h1>All Buses</h1>
+<ul>
+  <% @buses.each do |bus| %>
+    <li> <%= link_to bus.name, bus %> </li>
+  <% end %>
+</ul>
+
+<%= button_to "create bus", new_bus_path, method: :get %>

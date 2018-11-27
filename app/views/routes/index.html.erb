@@ -1,0 +1,11 @@
+<h1>Route Names</h1>
+
+<ul>
+    <% @routes.each do |route| %>
+  <li> <%= link_to route.name, route %></li>
+      <% end %>
+</ul>
+
+
+
+<%= button_to "add route", new_route_path, method: :get %>

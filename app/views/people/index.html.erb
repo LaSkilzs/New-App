@@ -1,0 +1,9 @@
+<h1>All Bus Riders</h1>
+
+<ul>
+  <% @people.each do |person| %>
+    <li> <%= link_to person.name, person %></li>
+  <% end %>
+</ul>
+
+<%= button_to "add rider", new_person_path, method: :get %>
